@@ -1,0 +1,4 @@
+plugins:
+  topic_trade_buttons_enabled:
+    default: false
+    client: true
