@@ -1,3 +1,8 @@
 et:
   site_settings:
     topic_trade_buttons_enabled: "Teemade kauplemise nupud lubatud?"
+  topic_trading:
+    sold: Müüdud
+    purchased: Ostetud
+    exchanged: Vahetatud
+    cancelled: Katkestatud

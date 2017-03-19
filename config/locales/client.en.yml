@@ -1,0 +1,14 @@
+en:
+  js:
+    topic_trading:
+      enable_sold_button: "Enable 'Sold' button"
+      enable_purchased_button: "Enable 'Purchased' button"
+      enable_exchanged_button: "Enable 'Exchanged' button"
+      sold: Sold
+      purchased: Purchased
+      exchanged: Exchanged
+      cancelled: Cancelled
+      error_while_marked_as_sold: Error with marking topic as 'Sold'
+      error_while_marked_as_purchased: Error with marking topic as 'Purchased'
+      error_while_marked_as_exchanged: Error with marking topic as 'Exchanged'
+      error_while_marked_as_cancelled: Error with marking topic as 'Cancelled'

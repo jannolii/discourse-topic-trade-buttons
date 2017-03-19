@@ -1,0 +1,14 @@
+et:
+  js:
+    topic_trading:
+      enable_sold_button: "Luba 'Müüdud' nupp"
+      enable_purchased_button: "Luba 'Ostetud' nupp"
+      enable_exchanged_button: "Luba 'Vahetatud' nupp"
+      sold: Müüdud
+      purchased: Ostetud
+      exchanged: Vahetatud
+      cancelled: Katkestatud
+      error_while_marked_as_sold: Viga teema müüduks märkimisel
+      error_while_marked_as_purchased: Viga teema ostetuks märkimisel
+      error_while_marked_as_exchanged: Viga teema vahetatuks märkimisel
+      error_while_marked_as_cancelled: Viga teema katkestatuks märkimisel

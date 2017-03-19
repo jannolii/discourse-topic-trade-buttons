@@ -1,0 +1,12 @@
+{{#if model.canTopicBeMarkedAsSold }}
+  {{d-button class="btn btn-primary" action="clickSoldButton" actionParam=model label="topic_trading.sold"}}
+{{/if}}
+{{#if model.canTopicBeMarkedAsPurchased}}
+  {{d-button class="btn btn-primary" action="clickPurchasedButton" actionParam=model label="topic_trading.purchased"}}
+{{/if}}
+{{#if model.canTopicBeMarkedAsExchanged}}
+  {{d-button class="btn btn-primary" action="clickExchangedButton" actionParam=model label="topic_trading.exchanged"}}
+{{/if}}
+{{#if model.canTopicBeMarkedAsCancelled}}
+  {{d-button class="btn" action="clickCancelledButton" actionParam=model label="topic_trading.cancelled"}}
+{{/if}}
