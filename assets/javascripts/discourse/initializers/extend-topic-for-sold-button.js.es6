@@ -11,7 +11,7 @@ function initializeWithApi(api) {
     canTopicBeMarkedAsSold: function() {
       const enable_sold_button = this.category_enable_sold_button;
       return !this.isPrivatemessage
-        && currentUser.id === this.user_id
+        && currentUser && currentUser.id === this.user_id
         && this.siteSettings.topic_trade_buttons_enabled
         && enable_sold_button
         && !this.get('archived')
@@ -21,7 +21,7 @@ function initializeWithApi(api) {
     canTopicBeMarkedAsPurchased: function() {
       const enable_purchased_button = this.category_enable_purchased_button;
       return !this.isPrivatemessage
-        && currentUser.id === this.user_id
+        && currentUser && currentUser.id === this.user_id
         && this.siteSettings.topic_trade_buttons_enabled
         && enable_purchased_button
         && !this.get('archived')
@@ -31,7 +31,7 @@ function initializeWithApi(api) {
     canTopicBeMarkedAsExchanged: function() {
       const enable_exchanged_button = this.category_enable_exchanged_button;
       return !this.isPrivatemessage
-        && currentUser.id === this.user_id
+        && currentUser && currentUser.id === this.user_id
         && this.siteSettings.topic_trade_buttons_enabled
         && enable_exchanged_button
         && !this.get('archived')
@@ -41,7 +41,7 @@ function initializeWithApi(api) {
     canTopicBeMarkedAsCancelled: function() {
       const enable_cancelled_button = this.category_enable_cancelled_button;
       return !this.isPrivatemessage
-        && currentUser.id === this.user_id
+        && currentUser && currentUser.id === this.user_id
         && this.siteSettings.topic_trade_buttons_enabled
         && enable_cancelled_button
         && !this.get('archived')
