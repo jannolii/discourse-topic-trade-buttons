@@ -1,9 +1,10 @@
 et:
   js:
     topic_trading:
-      enable_sold_button: "Luba 'Müüdud' nupp"
-      enable_purchased_button: "Luba 'Ostetud' nupp"
-      enable_exchanged_button: "Luba 'Vahetatud' nupp"
+      enable_sold_button: Luba 'Müüdud' nupp
+      enable_purchased_button: Luba 'Ostetud' nupp
+      enable_exchanged_button: Luba 'Vahetatud' nupp
+      enable_cancelled_button: Luba 'Katkestatud' nupp
       sold: Müüdud
       purchased: Ostetud
       exchanged: Vahetatud
@@ -12,3 +13,7 @@ et:
       error_while_marked_as_purchased: Viga teema ostetuks märkimisel
       error_while_marked_as_exchanged: Viga teema vahetatuks märkimisel
       error_while_marked_as_cancelled: Viga teema katkestatuks märkimisel
+      mark_as_sold_confirm: Kas oled kindel, et soovid teema müüduks märkida?
+      mark_as_purchased_confirm: Kas oled kindel, et soovid teema ostetuks märkida?
+      mark_as_exchanged_confirm: Kas oled kindel, et soovid teema vahetatuks märkida?
+      mark_as_cancelled_confirm: Kas oled kindel, et soovid teema katkestatuks märkida?
