@@ -7,7 +7,7 @@ function initializeWithApi(api) {
   const currentUser = api.getCurrentUser();
 
   Topic.reopen({
-    @computed('archived', 'closed')
+    @computed('archived', 'custom_fields.enable_sold_button')
     canTopicBeMarkedAsSold: function() {
       const enable_sold_button = this.category_enable_sold_button;
       return !this.isPrivatemessage
@@ -17,7 +17,7 @@ function initializeWithApi(api) {
         && !this.get('archived')
     },
 
-    @computed('archived', 'closed')
+    @computed('archived', 'custom_fields.enable_purchased_button')
     canTopicBeMarkedAsPurchased: function() {
       const enable_purchased_button = this.category_enable_purchased_button;
       return !this.isPrivatemessage
@@ -27,7 +27,7 @@ function initializeWithApi(api) {
         && !this.get('archived')
     },
 
-    @computed('archived', 'closed')
+    @computed('archived', 'custom_fields.enable_exchanged_button')
     canTopicBeMarkedAsExchanged: function() {
       const enable_exchanged_button = this.category_enable_exchanged_button;
       return !this.isPrivatemessage
@@ -37,7 +37,7 @@ function initializeWithApi(api) {
         && !this.get('archived')
     },
 
-    @computed('archived', 'closed')
+    @computed('archived', 'custom_fields.enable_cancelled_button')
     canTopicBeMarkedAsCancelled: function() {
       const enable_cancelled_button = this.category_enable_cancelled_button;
       return !this.isPrivatemessage
