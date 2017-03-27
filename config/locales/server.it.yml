@@ -1,0 +1,8 @@
+it:
+  site_settings:
+    topic_trade_buttons_enabled: "Abilitare i pulsanti per la negoziazione sugli argomenti?"
+  topic_trading:
+    sold: Venduto
+    purchased: Acquistato
+    exchanged: Scambiato
+    cancelled: Cancellato
