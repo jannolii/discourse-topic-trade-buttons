@@ -75,7 +75,7 @@ after_initialize do
           end
 
           topic.archived = true
-          i18n_transaction = I18n.t("topic_trading.#{transaction}", locale: :et).mb_chars.upcase
+          i18n_transaction = I18n.t("topic_trading.#{transaction}", locale: (SiteSetting.default_locale || :en)).mb_chars.upcase
           topic.title = "[#{i18n_transaction}] #{topic.title}"
           topic.custom_fields["#{transaction}_at"] = Time.zone.now.iso8601
           topic.save!
