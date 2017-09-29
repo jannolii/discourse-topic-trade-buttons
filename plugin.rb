@@ -92,7 +92,7 @@ after_initialize do
   class DiscourseTopicTradeButtons::TradeController < ::ApplicationController
     requires_plugin PLUGIN_NAME
 
-    before_filter :ensure_logged_in
+    before_action :ensure_logged_in
 
     def sold
       topic_id   = params.require(:topic_id)
