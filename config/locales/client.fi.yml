@@ -1,0 +1,19 @@
+fi:
+  js:
+    topic_trading:
+      enable_sold_button: Ota Myyty-painike käyttöön
+      enable_purchased_button: Ota Ostettu-painike käyttöön
+      enable_exchanged_button: Ota Vaihdettu-painike käyttöön
+      enable_cancelled_button: Ota Peruttu-painike käyttöön
+      sold: Myyty
+      purchased: Ostettu
+      exchanged: Vaihdettu
+      cancelled: Peruttu
+      error_while_marked_as_sold: Virhe merkittäessa ketjua "myydyksi"
+      error_while_marked_as_purchased: Virhe merkittäessa ketjua "ostetuksi"
+      error_while_marked_as_exchanged: Virhe merkittäessa ketjua "vaihdetuksi"
+      error_while_marked_as_cancelled: Virhe merkittäessa ketjua "perutuksi"
+      mark_as_sold_confirm: Oletko varma, että haluat merkitä ketjun "myydyksi"?
+      mark_as_purchased_confirm: Oletko varma, että haluat merkitä ketjun "ostetuksi"?
+      mark_as_exchanged_confirm: Oletko varma, että haluat merkitä ketjun "vaihdetuksi"?
+      mark_as_cancelled_confirm: Oletko varma, että haluat merkitä ketjun "perutuksi"?
