@@ -1,0 +1,8 @@
+fi:
+  site_settings:
+    topic_trade_buttons_enabled: "Ota kaupankäyntipainikkeet käyttöön?"
+  topic_trading:
+    sold: Myyty
+    purchased: Ostettu
+    exchanged: Vaihdettu
+    cancelled: Peruttu
