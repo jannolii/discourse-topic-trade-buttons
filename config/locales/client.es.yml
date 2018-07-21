@@ -1,0 +1,19 @@
+es:
+  js:
+    topic_trading:
+      enable_sold_button: Habilitar botón de 'Vendido'
+      enable_purchased_button: Habilitar botón de 'Adquirido'
+      enable_exchanged_button: Habilitar botón de 'Cambiado'
+      enable_cancelled_button: Habilitar boton de 'Cancelado'
+      sold: Vendido
+      purchased: Adquirido
+      exchanged: Cambiado
+      cancelled: Cancelado
+      error_while_marked_as_sold: Error al marcar el tema como 'Vendido'
+      error_while_marked_as_purchased: Error al marcar el tema como 'Adquirido'
+      error_while_marked_as_exchanged: Error al marcar el tema como 'Cambiado'
+      error_while_marked_as_cancelled: Error al marcar el tema como 'Cancelado'
+      mark_as_sold_confirm: ¿Estás seguro de que quieres marcar el tema como 'Vendido'?
+      mark_as_purchased_confirm: ¿Estás seguro de que quieres marcar el tema como 'Adquirido'?
+      mark_as_exchanged_confirm: ¿Estás seguro de que quieres marcar el tema como 'Cambiado'?
+      mark_as_cancelled_confirm: ¿Estás seguro de que quieres marcar el tema como 'Cancelado'?
