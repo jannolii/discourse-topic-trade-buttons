@@ -1,8 +1,8 @@
 pt:
   site_settings:
-    topic_trade_buttons_enabled: "Topic trading buttons enabled?"
+    topic_trade_buttons_enabled: "Activar os botões de trading no tópico?"
   topic_trading:
-    sold: Sold
-    purchased: Purchased
-    exchanged: Exchanged
-    cancelled: Cancelled
+    sold: Vendido
+    purchased: Comprado
+    exchanged: Trocado
+    cancelled: Cancelado
