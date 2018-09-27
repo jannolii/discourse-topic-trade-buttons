@@ -1,19 +1,19 @@
 pt:
   js:
     topic_trading:
-      enable_sold_button: Enable 'Sold' button
-      enable_purchased_button: Enable 'Purchased' button
-      enable_exchanged_button: Enable 'Exchanged' button
-      enable_cancelled_button: Enable 'Cancelled' button
-      sold: Sold
-      purchased: Purchased
-      exchanged: Exchanged
-      cancelled: Cancelled
-      error_while_marked_as_sold: Error with marking topic as 'Sold'
-      error_while_marked_as_purchased: Error with marking topic as 'Purchased'
-      error_while_marked_as_exchanged: Error with marking topic as 'Exchanged'
-      error_while_marked_as_cancelled: Error with marking topic as 'Cancelled'
-      mark_as_sold_confirm: Are you sure you want topic to mark topic as 'Sold'?
-      mark_as_purchased_confirm: Are you sure you want topic to mark topic as 'Purchased'?
-      mark_as_exchanged_confirm: Are you sure you want topic to mark topic as 'Exchanged'?
-      mark_as_cancelled_confirm: Are you sure you want topic to mark topic as 'Cancelled'?
+      enable_sold_button: Activar o botão de 'Vendido'
+      enable_purchased_button: Activar o botão de 'Comprado'
+      enable_exchanged_button: Activar o botão de 'Trocado'
+      enable_cancelled_button: Activar o botão de 'Cancelado'
+      sold: Vendido
+      purchased: Comprado
+      exchanged: Trocado
+      cancelled: Cancelado
+      error_while_marked_as_sold: Erro ao marcar o tópico como 'Vendido'
+      error_while_marked_as_purchased: Erro ao marcar o tópico como 'Comprado'
+      error_while_marked_as_exchanged: Erro ao marcar o tópico como 'Trocado'
+      error_while_marked_as_cancelled: Erro ao marcar o tópico como 'Cancelado'
+      mark_as_sold_confirm: Tem a certeza que deseja marcar este tópico como 'Vendido'?
+      mark_as_purchased_confirm: Tem a certeza que deseja marcar este tópico como 'Comprado'?
+      mark_as_exchanged_confirm: Tem a certeza que deseja marcar este tópico como 'Trocado'?
+      mark_as_cancelled_confirm: Tem a certeza que deseja marcar este tópico como 'Cancelado'?
