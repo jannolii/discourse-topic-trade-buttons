@@ -1,0 +1,19 @@
+pt:
+  js:
+    topic_trading:
+      enable_sold_button: Activar o botão de 'Vendido'
+      enable_purchased_button: Activar o botão de 'Comprado'
+      enable_exchanged_button: Activar o botão de 'Trocado'
+      enable_cancelled_button: Activar o botão de 'Cancelado'
+      sold: Vendido
+      purchased: Comprado
+      exchanged: Trocado
+      cancelled: Cancelado
+      error_while_marked_as_sold: Erro ao marcar o tópico como 'Vendido'
+      error_while_marked_as_purchased: Erro ao marcar o tópico como 'Comprado'
+      error_while_marked_as_exchanged: Erro ao marcar o tópico como 'Trocado'
+      error_while_marked_as_cancelled: Erro ao marcar o tópico como 'Cancelado'
+      mark_as_sold_confirm: Tem a certeza que deseja marcar este tópico como 'Vendido'?
+      mark_as_purchased_confirm: Tem a certeza que deseja marcar este tópico como 'Comprado'?
+      mark_as_exchanged_confirm: Tem a certeza que deseja marcar este tópico como 'Trocado'?
+      mark_as_cancelled_confirm: Tem a certeza que deseja marcar este tópico como 'Cancelado'?
