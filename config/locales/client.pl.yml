@@ -1,0 +1,19 @@
+pl:
+  js:
+    topic_trading:
+      enable_sold_button: Aktywuj przycisk 'Sprzedane'
+      enable_purchased_button: Aktywuj przycisk 'Kupiono'
+      enable_exchanged_button: Aktywuj przycisk 'Wymieniono'
+      enable_cancelled_button: Aktywuj przycisk 'Anulowano'
+      sold: Sprzedane
+      purchased: Kupiono
+      exchanged: Wymieniono
+      cancelled: Anulowano
+      error_while_marked_as_sold: Błąd podczas oznaczania tematu jako "Sprzedane"
+      error_while_marked_as_purchased: Błąd podczas oznaczania tematu jako "Kupiono"
+      error_while_marked_as_exchanged: Błąd podczas oznaczania tematu jako "Wymieniono"
+      error_while_marked_as_cancelled: Błąd podczas oznaczania tematu jako "Anulowano"
+      mark_as_sold_confirm: Czy na pewno oznaczyć temat jako "Sprzedane"?
+      mark_as_purchased_confirm: Czy na pewno oznaczyć temat jako "Kupiono"?
+      mark_as_exchanged_confirm: Czy na pewno oznaczyć temat jako "Wymieniono"?
+      mark_as_cancelled_confirm: Czy na pewno oznaczyć temat jako "Anulowano"?

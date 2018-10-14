@@ -1,0 +1,8 @@
+pl:
+  site_settings:
+    topic_trade_buttons_enabled: "Aktywować przyciski trybu handlowego?"
+  topic_trading:
+    sold: Sprzedano
+    purchased: Kupiono
+    exchanged: Wymieniono
+    cancelled: Anulowano
