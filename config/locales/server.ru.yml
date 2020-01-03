@@ -1,0 +1,8 @@
+ru:
+  site_settings:
+    topic_trade_buttons_enabled: "Включить кнопки управления продажей?"
+  topic_trading:
+    sold: Продано
+    purchased: Куплено
+    exchanged: Обменено
+    cancelled: Снято с продажи

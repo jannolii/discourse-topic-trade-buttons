@@ -1,0 +1,19 @@
+ru:
+  js:
+    topic_trading:
+      enable_sold_button: Включить кнопку 'Продано'
+      enable_purchased_button: Включить кнопку 'Куплено'
+      enable_exchanged_button: Включить кнопку 'Обменено'
+      enable_cancelled_button: Включить кнопку 'Снято с продажи'
+      sold: Продано
+      purchased: Куплено
+      exchanged: Обменено
+      cancelled: Снято с продажи
+      error_while_marked_as_sold: Возникла ошибка при пометке 'Продано'
+      error_while_marked_as_purchased: Возникла ошибка при пометке  'Куплено'
+      error_while_marked_as_exchanged: Возникла ошибка при пометке  'Обменено'
+      error_while_marked_as_cancelled: Возникла ошибка при пометке  'Снято с продажи'
+      mark_as_sold_confirm: Вы хотите пометить  объявление как 'Продано'?
+      mark_as_purchased_confirm: Вы хотите пометить объявление как 'Куплено'?
+      mark_as_exchanged_confirm: Вы хотите пометить объявление как  'Обменено'?
+      mark_as_cancelled_confirm: Вы хотите пометить объявление как 'Снято с продажи'?
