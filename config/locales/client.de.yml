@@ -1,0 +1,19 @@
+de:
+  js:
+    topic_trading:
+      enable_sold_button: Schaltfläche 'Verkauft' aktivieren
+      enable_purchased_button: Schaltfläche 'Gekauft' aktivieren
+      enable_exchanged_button: Schaltfläche 'Ausgetauscht' aktivieren
+      enable_cancelled_button: Schaltfläche 'Storniert' aktivieren
+      sold: Verkauft
+      purchased: Gekauft
+      exchanged: Ausgetauscht
+      cancelled: Storniert
+      error_while_marked_as_sold: Fehler beim Markieren des Themas als 'Verkauft'
+      error_while_marked_as_purchased: Fehler beim Markieren des Themas als 'Gekauft'
+      error_while_marked_as_exchanged: Fehler beim Markieren des Themas als 'Ausgetauscht'
+      error_while_marked_as_cancelled: Fehler beim Markieren des Themas als 'Storniert'
+      mark_as_sold_confirm: Möchten Sie das Thema wirklich als 'Verkauft' markieren?
+      mark_as_purchased_confirm: Möchten Sie das Thema wirklich als 'Gekauft' markieren?
+      mark_as_exchanged_confirm: Möchten Sie das Thema wirklich als 'Ausgetauscht' markieren?
+      mark_as_cancelled_confirm: Möchten Sie das Thema wirklich als 'Storniert' markieren?

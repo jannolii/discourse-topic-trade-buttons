@@ -1,0 +1,8 @@
+de:
+  site_settings:
+    topic_trade_buttons_enabled: "Handel Schaltfläche für Themen aktiviert?"
+  topic_trading:
+    sold: Verkauft
+    purchased: Gekauft
+    exchanged: Ausgetauscht
+    cancelled: Storniert
