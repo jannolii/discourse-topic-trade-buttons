@@ -1,0 +1,19 @@
+fr:
+  js:
+    topic_trading:
+      enable_sold_button: Activer le bouton 'Vendu'
+      enable_purchased_button: Activer le bouton 'Acheté'
+      enable_exchanged_button: Activer le bouton 'Échangé'
+      enable_cancelled_button: Activer le bouton 'Annulé'
+      sold: Vendu
+      purchased: Acheté
+      exchanged: Échangé
+      cancelled: Annulé
+      error_while_marked_as_sold: Erreur lors du marquage du sujet comme 'Vendu'
+      error_while_marked_as_purchased: Erreur lors du marquage du sujet comme 'Acheté'
+      error_while_marked_as_exchanged: Erreur lors du marquage du sujet comme 'Échangé'
+      error_while_marked_as_cancelled: Erreur lors du marquage du sujet comme 'Annulé'
+      mark_as_sold_confirm: Voulez-vous vraiment que le sujet sois marquer comme 'Vendu'?
+      mark_as_purchased_confirm: Voulez-vous vraiment que le sujet sois marquer comme 'Acheté'?
+      mark_as_exchanged_confirm: Voulez-vous vraiment que le sujet sois marquer comme 'Echangé'?
+      mark_as_cancelled_confirm: Voulez-vous vraiment que le sujet sois marquer comme 'Annulé'?

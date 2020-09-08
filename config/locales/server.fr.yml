@@ -1,0 +1,8 @@
+fr:
+  site_settings:
+    topic_trade_buttons_enabled: "Activer le bouton des ventes/achats sur les sujets?"
+  topic_trading:
+    sold: Vendu
+    purchased: Acheté
+    exchanged: Échangé
+    cancelled: Annulé
