@@ -1,12 +1,32 @@
-{{#if model.canTopicBeMarkedAsSold }}
-  <DButton @class="btn btn-primary" @action={{action "clickSoldButton"}} @actionParam={{model}} @label="topic_trading.sold" />
+{{#if model.canTopicBeMarkedAsSold}}
+  <DButton
+    @class="btn btn-primary"
+    @action={{action "clickSoldButton"}}
+    @actionParam={{model}}
+    @label="topic_trading.sold"
+  />
 {{/if}}
 {{#if model.canTopicBeMarkedAsPurchased}}
-  <DButton @class="btn btn-primary" @action={{action "clickPurchasedButton"}} @actionParam={{model}} @label="topic_trading.purchased" />
+  <DButton
+    @class="btn btn-primary"
+    @action={{action "clickPurchasedButton"}}
+    @actionParam={{model}}
+    @label="topic_trading.purchased"
+  />
 {{/if}}
 {{#if model.canTopicBeMarkedAsExchanged}}
-  <DButton @class="btn btn-primary" @action={{action "clickExchangedButton"}} @actionParam={{model}} @label="topic_trading.exchanged"/>
+  <DButton
+    @class="btn btn-primary"
+    @action={{action "clickExchangedButton"}}
+    @actionParam={{model}}
+    @label="topic_trading.exchanged"
+  />
 {{/if}}
 {{#if model.canTopicBeMarkedAsCancelled}}
-  <DButton @class="btn" @action={{action "clickCancelledButton"}} @actionParam={{model}} @label="topic_trading.cancelled" />
+  <DButton
+    @class="btn"
+    @action={{action "clickCancelledButton"}}
+    @actionParam={{model}}
+    @label="topic_trading.cancelled"
+  />
 {{/if}}

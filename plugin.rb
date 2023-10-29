@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # name: discourse-topic-trade-buttons
 # about: Adds one or all buttons (Sold, Purchased, Exchanged) to designated categories
 # version: 0.0.1
@@ -9,7 +11,7 @@ PLUGIN_NAME ||= "discourse_topic_trade_buttons".freeze
 
 after_initialize do
 
-  if SiteSetting.topic_trade_buttons_enabled then
+  if SiteSetting.topic_trade_buttons_enabled
 
     add_to_serializer(:topic_view, :category_enable_sold_button, include_condition: -> { object.topic.category }) {
       object.topic.category.custom_fields['enable_sold_button']
@@ -95,7 +97,7 @@ after_initialize do
     before_action :ensure_logged_in
 
     def sold
-      topic_id   = params.require(:topic_id)
+      topic_id = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.sold(topic_id, current_user)
@@ -106,7 +108,7 @@ after_initialize do
     end
 
     def purchased
-      topic_id   = params.require(:topic_id)
+      topic_id = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.purchased(topic_id, current_user)
@@ -117,7 +119,7 @@ after_initialize do
     end
 
     def exchanged
-      topic_id   = params.require(:topic_id)
+      topic_id = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.exchanged(topic_id, current_user)
@@ -128,7 +130,7 @@ after_initialize do
     end
 
     def cancelled
-      topic_id   = params.require(:topic_id)
+      topic_id = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.cancelled(topic_id, current_user)

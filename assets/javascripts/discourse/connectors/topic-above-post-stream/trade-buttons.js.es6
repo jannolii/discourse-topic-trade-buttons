@@ -1,7 +1,7 @@
-import { popupAjaxError } from 'discourse/lib/ajax-error';
-import Topic from 'discourse/models/topic';
-import { ajax } from 'discourse/lib/ajax';
 import { getOwner } from "@ember/application";
+import { ajax } from "discourse/lib/ajax";
+import { popupAjaxError } from "discourse/lib/ajax-error";
+import Topic from "discourse/models/topic";
 
 export default {
   actions: {
@@ -13,18 +13,20 @@ export default {
           ajax("/topic/sold", {
             type: "PUT",
             data: {
-              topic_id: topic.id
-            }
-          }).then((result) => {
-            topic.set("custom_fields.sold_at", result.topic.sold_at);
-            topic.set("title", result.topic.title);
-            topic.set("fancy_title", result.topic.fancy_title);
-            topic.set("archived", result.topic.archived);
-          }).catch(() => {
-            dialog.alert({
-              message: I18n.t("topic_trading.error_while_marked_as_sold")
-            });
+              topic_id: topic.id,
+            },
           })
+            .then((result) => {
+              topic.set("custom_fields.sold_at", result.topic.sold_at);
+              topic.set("title", result.topic.title);
+              topic.set("fancy_title", result.topic.fancy_title);
+              topic.set("archived", result.topic.archived);
+            })
+            .catch(() => {
+              dialog.alert({
+                message: I18n.t("topic_trading.error_while_marked_as_sold"),
+              });
+            });
         },
       });
     },
@@ -37,18 +39,25 @@ export default {
           ajax("/topic/purchased", {
             type: "PUT",
             data: {
-              topic_id: topic.id
-            }
-          }).then((result) => {
-            topic.set('custom_fields.purchased_at', result.topic.purchased_at);
-            topic.set('title', result.topic.title);
-            topic.set('fancy_title', result.topic.fancy_title);
-            topic.set('archived', result.topic.archived);
-          }).catch(() => {
-            dialog.alert({
-              message: I18n.t("topic_trading.error_while_marked_as_purchased")
-            });
+              topic_id: topic.id,
+            },
           })
+            .then((result) => {
+              topic.set(
+                "custom_fields.purchased_at",
+                result.topic.purchased_at
+              );
+              topic.set("title", result.topic.title);
+              topic.set("fancy_title", result.topic.fancy_title);
+              topic.set("archived", result.topic.archived);
+            })
+            .catch(() => {
+              dialog.alert({
+                message: I18n.t(
+                  "topic_trading.error_while_marked_as_purchased"
+                ),
+              });
+            });
         },
       });
     },
@@ -61,18 +70,25 @@ export default {
           ajax("/topic/exchanged", {
             type: "PUT",
             data: {
-              topic_id: topic.id
-            }
-          }).then((result) => {
-            topic.set('custom_fields.exchanged_at', result.topic.exchanged_at);
-            topic.set('title', result.topic.title);
-            topic.set('fancy_title', result.topic.fancy_title);
-            topic.set('archived', result.topic.archived);
-          }).catch(() => {
-            dialog.alert({
-              message: I18n.t("topic_trading.error_while_marked_as_exchanged")
-            });
+              topic_id: topic.id,
+            },
           })
+            .then((result) => {
+              topic.set(
+                "custom_fields.exchanged_at",
+                result.topic.exchanged_at
+              );
+              topic.set("title", result.topic.title);
+              topic.set("fancy_title", result.topic.fancy_title);
+              topic.set("archived", result.topic.archived);
+            })
+            .catch(() => {
+              dialog.alert({
+                message: I18n.t(
+                  "topic_trading.error_while_marked_as_exchanged"
+                ),
+              });
+            });
         },
       });
     },
@@ -85,20 +101,27 @@ export default {
           ajax("/topic/cancelled", {
             type: "PUT",
             data: {
-              topic_id: topic.id
-            }
-          }).then((result) => {
-            topic.set('custom_fields.cancelled_at', result.topic.cancelled_at);
-            topic.set('title', result.topic.title);
-            topic.set('fancy_title', result.topic.fancy_title);
-            topic.set('archived', result.topic.archived);
-          }).catch(() => {
-            dialog.alert({
-              message: I18n.t("topic_trading.error_while_marked_as_cancelled")
-            });
+              topic_id: topic.id,
+            },
           })
+            .then((result) => {
+              topic.set(
+                "custom_fields.cancelled_at",
+                result.topic.cancelled_at
+              );
+              topic.set("title", result.topic.title);
+              topic.set("fancy_title", result.topic.fancy_title);
+              topic.set("archived", result.topic.archived);
+            })
+            .catch(() => {
+              dialog.alert({
+                message: I18n.t(
+                  "topic_trading.error_while_marked_as_cancelled"
+                ),
+              });
+            });
         },
       });
-    }
-  }
+    },
+  },
 };
