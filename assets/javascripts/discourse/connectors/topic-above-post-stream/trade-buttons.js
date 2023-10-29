@@ -1,5 +1,6 @@
 import { getOwner } from "@ember/application";
 import { ajax } from "discourse/lib/ajax";
+import I18n from "discourse-i18n";
 
 export default {
   actions: {
