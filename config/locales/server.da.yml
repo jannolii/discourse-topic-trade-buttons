@@ -1,0 +1,8 @@
+da:
+  site_settings:
+    topic_trade_buttons_enabled: "Emne handels knapper aktiveret?"
+  topic_trading:
+    sold: Solgt
+    purchased: Købt
+    exchanged: Byttet
+    cancelled: Annulleret

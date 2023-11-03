@@ -1,0 +1,19 @@
+da:
+  js:
+    topic_trading:
+      enable_sold_button: Aktiver 'Solgt' knap
+      enable_purchased_button: Aktiver 'Købt' knap
+      enable_exchanged_button: Aktiver 'Byttet' knap
+      enable_cancelled_button: Aktiver 'Annulleret' knap
+      sold: Solgt
+      purchased: Købt
+      exchanged: Byttet
+      cancelled: Annulleret
+      error_while_marked_as_sold: Der opstod en fejl ved mærkning af emnet som 'Solgt'
+      error_while_marked_as_purchased: Der opstod en fejl ved mærkning af emnet som 'Købt'
+      error_while_marked_as_exchanged: Der opstod en fejl ved mærkning af emnet som 'Byttet'
+      error_while_marked_as_cancelled: Der opstod en fejl ved mærkning af emnet som 'Annulleret'
+      mark_as_sold_confirm: Er du sikker på at du vil markere emnet som 'Solgt'?
+      mark_as_purchased_confirm: Er du sikker på at du vil markere emnet som 'Købt'?
+      mark_as_exchanged_confirm: Er du sikker på at du vil markere emnet som 'Byttet'?
+      mark_as_cancelled_confirm: Er du sikker på at du vil markere emnet som 'Annulleret'?
