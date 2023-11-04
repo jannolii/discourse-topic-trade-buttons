@@ -11,23 +11,23 @@ after_initialize do
 
   if SiteSetting.topic_trade_buttons_enabled then
 
-    add_to_serializer(:topic_view, :category_enable_sold_button, false) {
+    add_to_serializer(:topic_view, :category_enable_sold_button, respect_plugin_enabled: false) {
       object.topic.category.custom_fields['enable_sold_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_purchased_button, false) {
+    add_to_serializer(:topic_view, :category_enable_purchased_button, respect_plugin_enabled: false) {
       object.topic.category.custom_fields['enable_purchased_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_exchanged_button, false) {
+    add_to_serializer(:topic_view, :category_enable_exchanged_button, respect_plugin_enabled: false) {
       object.topic.category.custom_fields['enable_exchanged_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_cancelled_button, false) {
+    add_to_serializer(:topic_view, :category_enable_cancelled_button, respect_plugin_enabled: false) {
       object.topic.category.custom_fields['enable_cancelled_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :custom_fields, false) {
+    add_to_serializer(:topic_view, :custom_fields, respect_plugin_enabled: false) {
       object.topic.custom_fields
     }
 
