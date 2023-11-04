@@ -1,12 +1,15 @@
 import { popupAjaxError } from 'discourse/lib/ajax-error';
 import Topic from 'discourse/models/topic';
 import { ajax } from 'discourse/lib/ajax';
+import { getOwner } from "@ember/application";
 
 export default {
   actions: {
     clickSoldButton(topic) {
-      return bootbox.confirm(I18n.t('topic_trading.mark_as_sold_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
-        if (result) {
+      const dialog = getOwner(this).lookup("service:dialog");
+      return dialog.yesNoConfirm({
+        message: I18n.t('topic_trading.mark_as_sold_confirm'),
+        didConfirm: () => {
           ajax("/topic/sold", {
             type: "PUT",
             data: {
@@ -18,15 +21,19 @@ export default {
             topic.set('fancy_title', result.topic.fancy_title);
             topic.set('archived', result.topic.archived);
           }).catch(() => {
-            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_sold'));
-          });
-        }
+            dialog.alert({
+              message: I18n.t('topic_trading.error_while_marked_as_sold')
+            });
+          })
+        },
       });
     },
 
     clickPurchasedButton(topic) {
-      return bootbox.confirm(I18n.t('topic_trading.mark_as_purchased_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
-        if (result) {
+      const dialog = getOwner(this).lookup("service:dialog");
+      return dialog.yesNoConfirm({
+        message: I18n.t('topic_trading.mark_as_purchased_confirm'),
+        didConfirm: () => {
           ajax("/topic/purchased", {
             type: "PUT",
             data: {
@@ -38,15 +45,19 @@ export default {
             topic.set('fancy_title', result.topic.fancy_title);
             topic.set('archived', result.topic.archived);
           }).catch(() => {
-            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_purchased'));
-          });
-        }
+            dialog.alert({
+              message: I18n.t('topic_trading.error_while_marked_as_purchased')
+            });
+          })
+        },
       });
     },
 
     clickExchangedButton(topic) {
-      return bootbox.confirm(I18n.t('topic_trading.mark_as_exchanged_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
-        if (result) {
+      const dialog = getOwner(this).lookup("service:dialog");
+      return dialog.yesNoConfirm({
+        message: I18n.t('topic_trading.mark_as_exchanged_confirm'),
+        didConfirm: () => {
           ajax("/topic/exchanged", {
             type: "PUT",
             data: {
@@ -58,15 +69,19 @@ export default {
             topic.set('fancy_title', result.topic.fancy_title);
             topic.set('archived', result.topic.archived);
           }).catch(() => {
-            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_exchanged'));
-          });
-        }
+            dialog.alert({
+              message: I18n.t('topic_trading.error_while_marked_as_exchanged')
+            });
+          })
+        },
       });
     },
 
     clickCancelledButton(topic) {
-      return bootbox.confirm(I18n.t('topic_trading.mark_as_cancelled_confirm'), I18n.t('no_value'), I18n.t('yes_value'), result => {
-        if (result) {
+      const dialog = getOwner(this).lookup("service:dialog");
+      return dialog.yesNoConfirm({
+        message: I18n.t('topic_trading.mark_as_cancelled_confirm'),
+        didConfirm: () => {
           ajax("/topic/cancelled", {
             type: "PUT",
             data: {
@@ -78,11 +93,12 @@ export default {
             topic.set('fancy_title', result.topic.fancy_title);
             topic.set('archived', result.topic.archived);
           }).catch(() => {
-            bootbox.alert(I18n.t('topic_trading.error_while_marked_as_cancelled'));
-          });
-        }
+            dialog.alert({
+              message: I18n.t('topic_trading.error_while_marked_as_cancelled')
+            });
+          })
+        },
       });
     }
-
   }
 };
