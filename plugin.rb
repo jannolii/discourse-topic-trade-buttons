@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # name: discourse-topic-trade-buttons
 # about: Adds one or all buttons (Sold, Purchased, Exchanged) to designated categories
 # version: 0.0.1
@@ -11,25 +9,25 @@ PLUGIN_NAME ||= "discourse_topic_trade_buttons".freeze
 
 after_initialize do
 
-  if SiteSetting.topic_trade_buttons_enabled
+  if SiteSetting.topic_trade_buttons_enabled then
 
-    add_to_serializer(:topic_view, :category_enable_sold_button, include_condition: -> { object.topic.category }) {
-      object.topic.category.custom_fields['enable_sold_button']
+    add_to_serializer(:topic_view, :category_enable_sold_button, false) {
+      object.topic.category.custom_fields['enable_sold_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_purchased_button, include_condition: -> { object.topic.category }) {
-      object.topic.category.custom_fields['enable_purchased_button']
+    add_to_serializer(:topic_view, :category_enable_purchased_button, false) {
+      object.topic.category.custom_fields['enable_purchased_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_exchanged_button, include_condition: -> { object.topic.category }) {
-      object.topic.category.custom_fields['enable_exchanged_button']
+    add_to_serializer(:topic_view, :category_enable_exchanged_button, false) {
+      object.topic.category.custom_fields['enable_exchanged_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :category_enable_cancelled_button, include_condition: -> { object.topic.category }) {
-      object.topic.category.custom_fields['enable_cancelled_button']
+    add_to_serializer(:topic_view, :category_enable_cancelled_button, false) {
+      object.topic.category.custom_fields['enable_cancelled_button'] if object.topic.category
     }
 
-    add_to_serializer(:topic_view, :custom_fields, include_condition: -> { object.topic.category }) {
+    add_to_serializer(:topic_view, :custom_fields, false) {
       object.topic.custom_fields
     }
 
@@ -97,7 +95,7 @@ after_initialize do
     before_action :ensure_logged_in
 
     def sold
-      topic_id = params.require(:topic_id)
+      topic_id   = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.sold(topic_id, current_user)
@@ -108,7 +106,7 @@ after_initialize do
     end
 
     def purchased
-      topic_id = params.require(:topic_id)
+      topic_id   = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.purchased(topic_id, current_user)
@@ -119,7 +117,7 @@ after_initialize do
     end
 
     def exchanged
-      topic_id = params.require(:topic_id)
+      topic_id   = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.exchanged(topic_id, current_user)
@@ -130,7 +128,7 @@ after_initialize do
     end
 
     def cancelled
-      topic_id = params.require(:topic_id)
+      topic_id   = params.require(:topic_id)
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.cancelled(topic_id, current_user)
