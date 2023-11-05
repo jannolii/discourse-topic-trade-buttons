@@ -1,7 +1,5 @@
 import { getOwner } from "@ember/application";
 import { ajax } from "discourse/lib/ajax";
-import { popupAjaxError } from "discourse/lib/ajax-error";
-import Topic from "discourse/models/topic";
 import I18n from "discourse-i18n";
 
 export default {
