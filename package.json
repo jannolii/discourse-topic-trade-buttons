@@ -1,8 +1,8 @@
 {
-  "name": "discourse-plugin-name",
+  "name": "discourse-topic-trade-buttons",
   "version": "0.0.1",
-  "repository": "TODO",
-  "author": "Discourse",
+  "repository": "https://github.com/jannolii/discourse-topic-trade-buttons",
+  "author": "Janno Liivak",
   "license": "MIT",
   "devDependencies": {
     "@discourse/lint-configs": "^1.0.0",
