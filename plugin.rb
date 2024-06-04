@@ -32,7 +32,7 @@ after_initialize do
       respect_plugin_enabled: false,
     ) { object.topic.category.custom_fields["enable_cancelled_button"] if object.topic.category }
 
-    add_to_serializer(:topic_view, :custom_fields, respect_plugin_enabled: false) do
+    add_to_serializer(:topic_view, :custom_fields, include_condition: -> { object.topic.category && scope.user&.admin? }) do
       object.topic.custom_fields
     end
   end
