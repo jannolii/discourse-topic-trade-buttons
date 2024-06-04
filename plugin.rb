@@ -10,19 +10,19 @@ PLUGIN_NAME ||= "discourse_topic_trade_buttons".freeze
 
 after_initialize do
   add_to_serializer(:topic_view, :category_enable_sold_button, include_condition: -> { object.topic.category }) do
-    object.topic.category.custom_fields["enable_sold_button"] if object.topic.category
+    object.topic.category.custom_fields["enable_sold_button"]
   end
 
   add_to_serializer(:topic_view, :category_enable_purchased_button, include_condition: -> { object.topic.category }) do
-    object.topic.category.custom_fields["enable_purchased_button"] if object.topic.category
+    object.topic.category.custom_fields["enable_purchased_button"]
   end
 
   add_to_serializer(:topic_view, :category_enable_exchanged_button, include_condition: -> { object.topic.category }) do
-    object.topic.category.custom_fields["enable_exchanged_button"] if object.topic.category
+    object.topic.category.custom_fields["enable_exchanged_button"]
   end
 
   add_to_serializer(:topic_view, :category_enable_cancelled_button, include_condition: -> { object.topic.category }) do
-    object.topic.category.custom_fields["enable_cancelled_button"] if object.topic.category
+    object.topic.category.custom_fields["enable_cancelled_button"]
   end
 
   add_to_serializer(:topic_view, :custom_fields, include_condition: -> { object.topic.category && scope.user&.admin? }) do
