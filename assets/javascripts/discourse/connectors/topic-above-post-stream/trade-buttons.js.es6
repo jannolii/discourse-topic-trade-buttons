@@ -16,7 +16,6 @@ export default {
             },
           })
             .then((result) => {
-              topic.set("custom_fields.sold_at", result.topic.sold_at);
               topic.set("title", result.topic.title);
               topic.set("fancy_title", result.topic.fancy_title);
               topic.set("archived", result.topic.archived);
@@ -42,10 +41,6 @@ export default {
             },
           })
             .then((result) => {
-              topic.set(
-                "custom_fields.purchased_at",
-                result.topic.purchased_at
-              );
               topic.set("title", result.topic.title);
               topic.set("fancy_title", result.topic.fancy_title);
               topic.set("archived", result.topic.archived);
@@ -73,10 +68,6 @@ export default {
             },
           })
             .then((result) => {
-              topic.set(
-                "custom_fields.exchanged_at",
-                result.topic.exchanged_at
-              );
               topic.set("title", result.topic.title);
               topic.set("fancy_title", result.topic.fancy_title);
               topic.set("archived", result.topic.archived);
@@ -104,10 +95,6 @@ export default {
             },
           })
             .then((result) => {
-              topic.set(
-                "custom_fields.cancelled_at",
-                result.topic.cancelled_at
-              );
               topic.set("title", result.topic.title);
               topic.set("fancy_title", result.topic.fancy_title);
               topic.set("archived", result.topic.archived);
