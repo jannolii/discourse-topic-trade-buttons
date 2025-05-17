@@ -1,0 +1,8 @@
+en:
+  site_settings:
+    topic_trade_buttons_enabled: "启动交易按钮?"
+  topic_trading:
+    sold: 已售
+    purchased: 已购
+    exchanged: 已交换
+    cancelled: 已取消
