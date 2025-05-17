@@ -17,3 +17,22 @@ en:
       mark_as_purchased_confirm: Are you sure you want topic to mark topic as 'Purchased'?
       mark_as_exchanged_confirm: Are you sure you want topic to mark topic as 'Exchanged'?
       mark_as_cancelled_confirm: Are you sure you want topic to mark topic as 'Cancelled'?
+zh_CN:
+  js:
+    topic_trading:
+      enable_sold_button: 启用'已售'按钮
+      enable_purchased_button: 启用'已购'按钮
+      enable_exchanged_button: 启用'已交换'按钮
+      enable_cancelled_button: 启用'已取消'按钮
+      sold: 已售
+      purchased: 已购
+      exchanged: 已交换
+      cancelled: 已取消
+      error_while_marked_as_sold: 标记主题为'已售'时出错
+      error_while_marked_as_purchased: 标记主题为'已购'时出错
+      error_while_marked_as_exchanged: 标记主题为'已交换'时出错
+      error_while_marked_as_cancelled: 标记主题为'已取消'时出错
+      mark_as_sold_confirm: 您确定要将主题标记为'已售'吗？
+      mark_as_purchased_confirm: 您确定要将主题标记为'已购'吗？
+      mark_as_exchanged_confirm: 您确定要将主题标记为'已交换'吗？
+      mark_as_cancelled_confirm: 您确定要将主题标记为'已取消'吗？
