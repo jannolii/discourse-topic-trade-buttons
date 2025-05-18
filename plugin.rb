@@ -1,7 +1,7 @@
 # name: discourse-topic-trade-buttons
 # about: Adds one or all buttons (Sold, Purchased, Exchanged) to designated categories
 # meta_topic_id: 71308
-# version: 0.0.1
+# version: 0.0.2
 # authors: Janno Liivak
 # frozen_string_literal: true
 
@@ -82,6 +82,12 @@ after_initialize do
     end
   end
 
+  require_dependency "application_serializer"
+
+  class TopicTradeButtonsSerializer < ApplicationSerializer
+    attributes :id, :title, :fancy_title, :archived
+  end
+
   require_dependency "application_controller"
 
   class DiscourseTopicTradeButtons::TradeController < ::ApplicationController
@@ -94,7 +100,7 @@ after_initialize do
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.sold(topic_id, current_user)
-        render json: { topic: topic }
+        render json: topic, serializer: TopicTradeButtonsSerializer
       rescue StandardError => e
         render_json_error e.message
       end
@@ -105,7 +111,7 @@ after_initialize do
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.purchased(topic_id, current_user)
-        render json: { topic: topic }
+        render json: topic, serializer: TopicTradeButtonsSerializer
       rescue StandardError => e
         render_json_error e.message
       end
@@ -116,7 +122,7 @@ after_initialize do
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.exchanged(topic_id, current_user)
-        render json: { topic: topic }
+        render json: topic, serializer: TopicTradeButtonsSerializer
       rescue StandardError => e
         render_json_error e.message
       end
@@ -127,7 +133,7 @@ after_initialize do
 
       begin
         topic = DiscourseTopicTradeButtons::Trade.cancelled(topic_id, current_user)
-        render json: { topic: topic }
+        render json: topic, serializer: TopicTradeButtonsSerializer
       rescue StandardError => e
         render_json_error e.message
       end

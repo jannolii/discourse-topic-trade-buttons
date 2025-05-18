@@ -1,32 +1,32 @@
-{{#if model.canTopicBeMarkedAsSold}}
+{{#if this.model.canTopicBeMarkedAsSold}}
   <DButton
     @class="btn btn-primary"
     @action={{action "clickSoldButton"}}
-    @actionParam={{model}}
+    @actionParam={{this.model}}
     @label="topic_trading.sold"
   />
 {{/if}}
-{{#if model.canTopicBeMarkedAsPurchased}}
+{{#if this.model.canTopicBeMarkedAsPurchased}}
   <DButton
     @class="btn btn-primary"
     @action={{action "clickPurchasedButton"}}
-    @actionParam={{model}}
+    @actionParam={{this.model}}
     @label="topic_trading.purchased"
   />
 {{/if}}
-{{#if model.canTopicBeMarkedAsExchanged}}
+{{#if this.model.canTopicBeMarkedAsExchanged}}
   <DButton
     @class="btn btn-primary"
     @action={{action "clickExchangedButton"}}
-    @actionParam={{model}}
+    @actionParam={{this.model}}
     @label="topic_trading.exchanged"
   />
 {{/if}}
-{{#if model.canTopicBeMarkedAsCancelled}}
+{{#if this.model.canTopicBeMarkedAsCancelled}}
   <DButton
     @class="btn"
     @action={{action "clickCancelledButton"}}
-    @actionParam={{model}}
+    @actionParam={{this.model}}
     @label="topic_trading.cancelled"
   />
 {{/if}}

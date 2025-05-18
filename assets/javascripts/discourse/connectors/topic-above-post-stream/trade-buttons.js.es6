@@ -16,9 +16,9 @@ export default {
             },
           })
             .then((result) => {
-              topic.set("title", result.topic.title);
-              topic.set("fancy_title", result.topic.fancy_title);
-              topic.set("archived", result.topic.archived);
+              topic.set("title", result.topic_trade_buttons.title);
+              topic.set("fancy_title", result.topic_trade_buttons.fancy_title);
+              topic.set("archived", result.topic_trade_buttons.archived);
             })
             .catch(() => {
               dialog.alert({
@@ -41,9 +41,9 @@ export default {
             },
           })
             .then((result) => {
-              topic.set("title", result.topic.title);
-              topic.set("fancy_title", result.topic.fancy_title);
-              topic.set("archived", result.topic.archived);
+              topic.set("title", result.topic_trade_buttons.title);
+              topic.set("fancy_title", result.topic_trade_buttons.fancy_title);
+              topic.set("archived", result.topic_trade_buttons.archived);
             })
             .catch(() => {
               dialog.alert({
@@ -68,9 +68,9 @@ export default {
             },
           })
             .then((result) => {
-              topic.set("title", result.topic.title);
-              topic.set("fancy_title", result.topic.fancy_title);
-              topic.set("archived", result.topic.archived);
+              topic.set("title", result.topic_trade_buttons.title);
+              topic.set("fancy_title", result.topic_trade_buttons.fancy_title);
+              topic.set("archived", result.topic_trade_buttons.archived);
             })
             .catch(() => {
               dialog.alert({
@@ -95,9 +95,9 @@ export default {
             },
           })
             .then((result) => {
-              topic.set("title", result.topic.title);
-              topic.set("fancy_title", result.topic.fancy_title);
-              topic.set("archived", result.topic.archived);
+              topic.set("title", result.topic_trade_buttons.title);
+              topic.set("fancy_title", result.topic_trade_buttons.fancy_title);
+              topic.set("archived", result.topic_trade_buttons.archived);
             })
             .catch(() => {
               dialog.alert({

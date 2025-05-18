@@ -6,3 +6,6 @@ en:
     purchased: Purchased
     exchanged: Exchanged
     cancelled: Cancelled
+  topic:
+    topic_is_deleted: "Can't edit topic that is deleted"
+    topic_must_be_open_to_edit: "Can't edit topic that is not open"
