@@ -6,3 +6,7 @@ et:
     purchased: Ostetud
     exchanged: Vahetatud
     cancelled: Katkestatud
+    sold_log: "@%{username} märkis selle teema müüduks."
+    purchased_log: "@%{username} märkis selle teema ostetuks."
+    exchanged_log: "@%{username} märkis selle teema vahetatuks."
+    cancelled_log: "@%{username} katkestas selle tehingu."

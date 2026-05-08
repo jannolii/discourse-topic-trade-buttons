@@ -6,3 +6,7 @@ da:
     purchased: Købt
     exchanged: Byttet
     cancelled: Annulleret
+    sold_log: "@%{username} markerede dette emne som solgt."
+    purchased_log: "@%{username} markerede dette emne som købt."
+    exchanged_log: "@%{username} markerede dette emne som byttet."
+    cancelled_log: "@%{username} annullerede denne handel."

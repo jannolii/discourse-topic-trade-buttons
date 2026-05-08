@@ -6,3 +6,7 @@ fr:
     purchased: Acheté
     exchanged: Échangé
     cancelled: Annulé
+    sold_log: "@%{username} a marqué ce sujet comme vendu."
+    purchased_log: "@%{username} a marqué ce sujet comme acheté."
+    exchanged_log: "@%{username} a marqué ce sujet comme échangé."
+    cancelled_log: "@%{username} a annulé cette transaction."

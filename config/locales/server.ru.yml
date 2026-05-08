@@ -6,3 +6,7 @@ ru:
     purchased: Куплено
     exchanged: Обменено
     cancelled: Снято с продажи
+    sold_log: "@%{username} отметил(а) эту тему как проданную."
+    purchased_log: "@%{username} отметил(а) эту тему как купленную."
+    exchanged_log: "@%{username} отметил(а) эту тему как обменённую."
+    cancelled_log: "@%{username} отменил(а) сделку."

@@ -6,3 +6,7 @@ es:
     purchased: Adquirido
     exchanged: Cambiado
     cancelled: Cancelado
+    sold_log: "@%{username} marcó este tema como vendido."
+    purchased_log: "@%{username} marcó este tema como adquirido."
+    exchanged_log: "@%{username} marcó este tema como cambiado."
+    cancelled_log: "@%{username} canceló esta transacción."

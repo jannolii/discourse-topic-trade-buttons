@@ -6,3 +6,7 @@ it:
     purchased: Acquistato
     exchanged: Scambiato
     cancelled: Cancellato
+    sold_log: "@%{username} ha segnato questo argomento come venduto."
+    purchased_log: "@%{username} ha segnato questo argomento come acquistato."
+    exchanged_log: "@%{username} ha segnato questo argomento come scambiato."
+    cancelled_log: "@%{username} ha annullato questa transazione."

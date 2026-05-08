@@ -6,6 +6,10 @@ en:
     purchased: Purchased
     exchanged: Exchanged
     cancelled: Cancelled
+    sold_log: "@%{username} marked this topic as sold."
+    purchased_log: "@%{username} marked this topic as purchased."
+    exchanged_log: "@%{username} marked this topic as exchanged."
+    cancelled_log: "@%{username} cancelled this trade."
   topic:
     topic_is_deleted: "Can't edit topic that is deleted"
     topic_must_be_open_to_edit: "Can't edit topic that is not open"

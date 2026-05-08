@@ -6,3 +6,7 @@ pl_PL:
     purchased: Kupiono
     exchanged: Wymieniono
     cancelled: Anulowano
+    sold_log: "@%{username} oznaczył(a) ten temat jako sprzedany."
+    purchased_log: "@%{username} oznaczył(a) ten temat jako kupiony."
+    exchanged_log: "@%{username} oznaczył(a) ten temat jako wymieniony."
+    cancelled_log: "@%{username} anulował(a) tę transakcję."

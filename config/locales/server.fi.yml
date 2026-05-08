@@ -6,3 +6,7 @@ fi:
     purchased: Ostettu
     exchanged: Vaihdettu
     cancelled: Peruttu
+    sold_log: "@%{username} merkitsi tämän aiheen myydyksi."
+    purchased_log: "@%{username} merkitsi tämän aiheen ostetuksi."
+    exchanged_log: "@%{username} merkitsi tämän aiheen vaihdetuksi."
+    cancelled_log: "@%{username} perui tämän kaupan."

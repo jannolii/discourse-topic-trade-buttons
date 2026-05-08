@@ -6,3 +6,7 @@ pt:
     purchased: Comprado
     exchanged: Trocado
     cancelled: Cancelado
+    sold_log: "@%{username} marcou este tópico como vendido."
+    purchased_log: "@%{username} marcou este tópico como comprado."
+    exchanged_log: "@%{username} marcou este tópico como trocado."
+    cancelled_log: "@%{username} cancelou esta transação."
