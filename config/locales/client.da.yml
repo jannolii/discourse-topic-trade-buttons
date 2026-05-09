@@ -1,6 +1,7 @@
 da:
   js:
     topic_trading:
+      category_settings_heading: Handelsknapper
       enable_sold_button: Aktiver 'Solgt' knap
       enable_purchased_button: Aktiver 'Købt' knap
       enable_exchanged_button: Aktiver 'Byttet' knap

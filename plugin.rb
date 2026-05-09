@@ -7,7 +7,21 @@
 
 enabled_site_setting :topic_trade_buttons_enabled
 
+register_asset "stylesheets/common/topic-trade-buttons.scss"
+
 PLUGIN_NAME ||= "discourse_topic_trade_buttons".freeze
+
+TRADE_CATEGORY_CUSTOM_FIELDS = %w[
+  enable_sold_button
+  enable_purchased_button
+  enable_exchanged_button
+  enable_cancelled_button
+].freeze
+
+TRADE_CATEGORY_CUSTOM_FIELDS.each do |f|
+  register_category_custom_field_type(f, :boolean)
+  Site.preloaded_category_custom_fields << f
+end
 
 after_initialize do
   add_to_serializer(:topic_view, :category_enable_sold_button, include_condition: -> { object.topic.category }) do
@@ -73,7 +87,9 @@ after_initialize do
           raise Discourse::InvalidAccess if topic.private_message?
           raise Discourse::InvalidAccess unless topic.user_id == user.id || user.staff?
 
-          unless topic.category&.custom_fields["enable_#{transaction}_button"].to_s == "true"
+          unless ActiveModel::Type::Boolean.new.cast(
+                   topic.category&.custom_fields["enable_#{transaction}_button"],
+                 )
             raise Discourse::InvalidAccess
           end
 

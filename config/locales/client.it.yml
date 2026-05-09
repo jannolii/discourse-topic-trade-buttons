@@ -1,6 +1,7 @@
 it:
   js:
     topic_trading:
+      category_settings_heading: Pulsanti di transazione
       enable_sold_button: Abilita il pulsante 'Venduto'
       enable_purchased_button: Abilita il pulsante 'Acquistato'
       enable_exchanged_button: Abilita il pulsante 'Scambiato'

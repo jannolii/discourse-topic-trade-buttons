@@ -1,6 +1,7 @@
 ru:
   js:
     topic_trading:
+      category_settings_heading: Кнопки торговли
       enable_sold_button: Включить кнопку 'Продано'
       enable_purchased_button: Включить кнопку 'Куплено'
       enable_exchanged_button: Включить кнопку 'Обменено'

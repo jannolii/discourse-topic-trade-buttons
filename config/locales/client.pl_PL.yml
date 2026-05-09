@@ -1,6 +1,7 @@
 pl_PL:
   js:
     topic_trading:
+      category_settings_heading: Przyciski transakcji
       enable_sold_button: Aktywuj przycisk 'Sprzedane'
       enable_purchased_button: Aktywuj przycisk 'Kupiono'
       enable_exchanged_button: Aktywuj przycisk 'Wymieniono'

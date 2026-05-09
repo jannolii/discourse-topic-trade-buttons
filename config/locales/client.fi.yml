@@ -1,6 +1,7 @@
 fi:
   js:
     topic_trading:
+      category_settings_heading: Kaupankäyntipainikkeet
       enable_sold_button: Ota Myyty-painike käyttöön
       enable_purchased_button: Ota Ostettu-painike käyttöön
       enable_exchanged_button: Ota Vaihdettu-painike käyttöön

@@ -1,6 +1,7 @@
 zh_CN:
   js:
     topic_trading:
+      category_settings_heading: 交易按钮
       enable_sold_button: 启用'已售'按钮
       enable_purchased_button: 启用'已购'按钮
       enable_exchanged_button: 启用'已交换'按钮

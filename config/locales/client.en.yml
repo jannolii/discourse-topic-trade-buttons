@@ -1,6 +1,7 @@
 en:
   js:
     topic_trading:
+      category_settings_heading: Topic Trade Buttons
       enable_sold_button: Enable 'Sold' button
       enable_purchased_button: Enable 'Purchased' button
       enable_exchanged_button: Enable 'Exchanged' button

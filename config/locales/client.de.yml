@@ -1,6 +1,7 @@
 de:
   js:
     topic_trading:
+      category_settings_heading: Handels-Schaltflächen
       enable_sold_button: Schaltfläche 'Verkauft' aktivieren
       enable_purchased_button: Schaltfläche 'Gekauft' aktivieren
       enable_exchanged_button: Schaltfläche 'Ausgetauscht' aktivieren

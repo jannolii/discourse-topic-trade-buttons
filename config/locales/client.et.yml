@@ -1,6 +1,7 @@
 et:
   js:
     topic_trading:
+      category_settings_heading: Kauplemise nupud
       enable_sold_button: Luba 'Müüdud' nupp
       enable_purchased_button: Luba 'Ostetud' nupp
       enable_exchanged_button: Luba 'Vahetatud' nupp
