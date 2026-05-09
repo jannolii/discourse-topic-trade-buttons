@@ -1,6 +1,6 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
+import computed from "discourse/lib/decorators";
 import Topic from "discourse/models/topic";
-import computed from "discourse-common/utils/decorators";
 
 function isEnabled(value) {
   if (value === true) {
