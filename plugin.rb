@@ -1,7 +1,7 @@
 # name: discourse-topic-trade-buttons
 # about: Adds one or all buttons (Sold, Purchased, Exchanged) to designated categories
 # meta_topic_id: 71308
-# version: 0.0.4
+# version: 0.0.5
 # authors: Janno Liivak
 # frozen_string_literal: true
 
