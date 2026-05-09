@@ -21,7 +21,7 @@ export default class TopicTradeButtonsCategorySettings extends Component {
   }
 
   <template>
-    {{#if this.siteSettings.enable_simplified_category_creation}}
+    {{#if @outletArgs.form}}
       <@outletArgs.form.Section
         @title={{i18n "topic_trading.category_settings_heading"}}
         class="category-custom-settings-outlet topic-trade-buttons-category-settings"
