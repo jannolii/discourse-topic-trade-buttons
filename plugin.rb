@@ -18,12 +18,12 @@ TRADE_CATEGORY_CUSTOM_FIELDS = %w[
   enable_cancelled_button
 ].freeze
 
-TRADE_CATEGORY_CUSTOM_FIELDS.each do |f|
-  register_category_custom_field_type(f, :boolean)
-  Site.preloaded_category_custom_fields << f
-end
-
 after_initialize do
+  TRADE_CATEGORY_CUSTOM_FIELDS.each do |f|
+    register_category_custom_field_type(f, :boolean)
+    Site.preloaded_category_custom_fields << f
+  end
+
   add_to_serializer(:topic_view, :category_enable_sold_button, include_condition: -> { object.topic.category }) do
     object.topic.category.custom_fields["enable_sold_button"]
   end
