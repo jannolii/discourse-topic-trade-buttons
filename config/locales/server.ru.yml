@@ -10,3 +10,5 @@ ru:
     purchased_log: "@%{username} отметил(а) эту тему как купленную."
     exchanged_log: "@%{username} отметил(а) эту тему как обменённую."
     cancelled_log: "@%{username} отменил(а) сделку."
+  topic:
+    topic_must_be_open_to_edit: "Нельзя редактировать тему, которая не открыта"

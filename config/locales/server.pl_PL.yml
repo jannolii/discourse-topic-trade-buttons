@@ -10,3 +10,5 @@ pl_PL:
     purchased_log: "@%{username} oznaczył(a) ten temat jako kupiony."
     exchanged_log: "@%{username} oznaczył(a) ten temat jako wymieniony."
     cancelled_log: "@%{username} anulował(a) tę transakcję."
+  topic:
+    topic_must_be_open_to_edit: "Nie można edytować tematu, który nie jest otwarty"

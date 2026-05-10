@@ -10,3 +10,5 @@ et:
     purchased_log: "@%{username} märkis selle teema ostetuks."
     exchanged_log: "@%{username} märkis selle teema vahetatuks."
     cancelled_log: "@%{username} katkestas selle tehingu."
+  topic:
+    topic_must_be_open_to_edit: "Suletud teemat ei saa muuta"

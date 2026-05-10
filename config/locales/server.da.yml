@@ -10,3 +10,5 @@ da:
     purchased_log: "@%{username} markerede dette emne som købt."
     exchanged_log: "@%{username} markerede dette emne som byttet."
     cancelled_log: "@%{username} annullerede denne handel."
+  topic:
+    topic_must_be_open_to_edit: "Kan ikke redigere et emne der ikke er åbent"

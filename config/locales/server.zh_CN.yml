@@ -10,3 +10,5 @@ zh_CN:
     purchased_log: "@%{username} 将本主题标记为已购。"
     exchanged_log: "@%{username} 将本主题标记为已交换。"
     cancelled_log: "@%{username} 已取消此交易。"
+  topic:
+    topic_must_be_open_to_edit: "无法编辑未开放的主题"

@@ -10,3 +10,5 @@ it:
     purchased_log: "@%{username} ha segnato questo argomento come acquistato."
     exchanged_log: "@%{username} ha segnato questo argomento come scambiato."
     cancelled_log: "@%{username} ha annullato questa transazione."
+  topic:
+    topic_must_be_open_to_edit: "Non è possibile modificare un argomento che non è aperto"

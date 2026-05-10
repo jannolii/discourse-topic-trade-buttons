@@ -10,3 +10,5 @@ es:
     purchased_log: "@%{username} marcó este tema como adquirido."
     exchanged_log: "@%{username} marcó este tema como cambiado."
     cancelled_log: "@%{username} canceló esta transacción."
+  topic:
+    topic_must_be_open_to_edit: "No se puede editar un tema que no está abierto"

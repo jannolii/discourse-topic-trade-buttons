@@ -10,3 +10,5 @@ fi:
     purchased_log: "@%{username} merkitsi tämän aiheen ostetuksi."
     exchanged_log: "@%{username} merkitsi tämän aiheen vaihdetuksi."
     cancelled_log: "@%{username} perui tämän kaupan."
+  topic:
+    topic_must_be_open_to_edit: "Suljettua ketjua ei voi muokata"
